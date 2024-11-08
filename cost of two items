@@ -1,0 +1,45 @@
+
+# Get input for item 1
+print("You are shopping in the store.")
+print("Please enter the name of the item,")
+print("the quantiy you would like to purchase,")
+print("and the cost of each item. I will calculate the total cost for your items")
+item_1 = input("Enter the name of item 1: ")
+quantity_wanted_item_one = int(input("Enter the quantity wanted for item 1: "))
+cost_wanted_item_one = float(input("Enter the cost of item 1: $"))
+
+# Calculate total cost for item 1
+total_cost_of_item_one = quantity_wanted_item_one * cost_wanted_item_one
+
+# Print details for item 1
+print(f"\n{item_1} {quantity_wanted_item_one} @ ${cost_wanted_item_one} = ${total_cost_of_item_one:.2f}")
+
+# Get input for item 2
+item_2 = input("\nEnter the name of item 2: ")
+quantity_wanted_item_two = int(input("Enter the quantity wanted for item 2: "))
+cost_wanted_item_two = float(input("Enter the cost of item 2: $"))
+
+# Calculate total cost for item 2
+total_cost_of_item_two = quantity_wanted_item_two * cost_wanted_item_two
+
+# Print details for item 2
+print(f"\n{item_2} {quantity_wanted_item_two} @ ${cost_wanted_item_two} = ${total_cost_of_item_two:.2f}")
+
+# Calculate total cost of everything
+total_cost_everything = total_cost_of_item_one + total_cost_of_item_two
+
+# Print details for item 1
+print(f"\n{item_1} {quantity_wanted_item_one} @ ${cost_wanted_item_one} = ${total_cost_of_item_one:.2f}")
+
+# Print total cost
+print(f"\nThe total cost of everything")
+print(f"+ ${total_cost_of_item_one:.2f}")
+print(f"+ ${total_cost_of_item_two:.2f}")
+print("______")
+print(f"$ {total_cost_everything:.2f}")
+
+# Print details for item 2
+print(f"\n{item_2} {quantity_wanted_item_two} @ ${cost_wanted_item_two} = ${total_cost_of_item_two:.2f}")
+
+print(f"\n{item_1} {quantity_wanted_item_one} @ ${cost_wanted_item_one} = ${total_cost_of_item_one:.2f}")
+print(f"$ {total_cost_everything:.2f}")
